@@ -79,6 +79,12 @@ public abstract class PictureBitmapTextureAtlasSource extends BaseTextureAtlasSo
 		return bitmap;
 	}
 
+
+    @Override
+    public Bitmap onLoadBitmap(Bitmap.Config pBitmapConfig, boolean cos) {
+        return onLoadBitmap(pBitmapConfig);
+    }
+
 	// ===========================================================
 	// Methods
 	// ===========================================================
