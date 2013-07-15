@@ -255,9 +255,9 @@ public abstract class BaseGameActivity extends BaseActivity implements IGameInte
 		this.mRenderSurfaceView.onPause();
 		this.releaseWakeLock();
 
-		if (!this.mGamePaused) {
+		//if (!this.mGamePaused) {
 			this.onPauseGame();
-		}
+		//}
 	}
 
 	@Override

@@ -39,21 +39,21 @@ public abstract class SimpleLayoutGameActivity extends LayoutGameActivity {
 	protected abstract Scene onCreateScene() throws IOException;
 
 	@Override
-	public final void onCreateResources(final OnCreateResourcesCallback pOnCreateResourcesCallback) throws IOException {
+	public void onCreateResources(final OnCreateResourcesCallback pOnCreateResourcesCallback) throws IOException {
 		this.onCreateResources();
 
 		pOnCreateResourcesCallback.onCreateResourcesFinished();
 	}
 
 	@Override
-	public final void onCreateScene(final OnCreateSceneCallback pOnCreateSceneCallback) throws IOException {
+	public void onCreateScene(final OnCreateSceneCallback pOnCreateSceneCallback) throws IOException {
 		final Scene scene = this.onCreateScene();
 
 		pOnCreateSceneCallback.onCreateSceneFinished(scene);
 	}
 
 	@Override
-	public final void onPopulateScene(final Scene pScene, final OnPopulateSceneCallback pOnPopulateSceneCallback) throws IOException {
+	public void onPopulateScene(final Scene pScene, final OnPopulateSceneCallback pOnPopulateSceneCallback) throws IOException {
 		pOnPopulateSceneCallback.onPopulateSceneFinished();
 	}
 
