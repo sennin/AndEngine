@@ -1,18 +1,16 @@
 package org.andengine.ui.activity;
 
+import android.app.ProgressDialog;
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.widget.Toast;
+
 import org.andengine.util.ActivityUtils;
 import org.andengine.util.DialogUtils;
 import org.andengine.util.call.AsyncCallable;
 import org.andengine.util.call.Callable;
 import org.andengine.util.call.Callback;
 import org.andengine.util.progress.ProgressCallable;
-
-import android.app.Activity;
-import android.app.ProgressDialog;
-import android.os.Bundle;
-import android.widget.Toast;
-
-import com.actionbarsherlock.app.SherlockFragmentActivity;
 
 /**
  * (c) 2010 Nicolas Gramlich
@@ -21,7 +19,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
  * @author Nicolas Gramlich
  * @since 18:35:28 - 29.08.2009
  */
-public abstract class BaseActivity extends SherlockFragmentActivity {
+public abstract class BaseActivity extends FragmentActivity {
 	// ===========================================================
 	// Constants
 	// ===========================================================
